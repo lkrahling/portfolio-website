@@ -1,0 +1,164 @@
+
+
+
+
+/* --------------HEADSHOT PHOTO ------------------------ */
+
+.profile img {
+
+  width: 400px;
+  display: flex;
+  border: 1px black;
+  border-radius: 50%;
+}
+
+
+
+
+/* UL & LI ITEMS */
+
+
+
+
+/* ----------ABOUT PAGE ----------- */
+
+h1 {
+  font-family:'Lato', sans-serif;
+  position: inline-block;
+  top: 20px;
+  left: 20px;
+  padding: 50px;
+}
+
+
+
+/* -------------------------- PLACES TRAVELED PAGE ---------------------------- */
+
+/* THIS IS THE DISPLAY PROPERTY OF THE PARENT ELEMENT TO FLEX-CONTAINER*/
+
+h2 {
+  text-align: center;
+}
+
+.flex-container-names {
+  display: flex;
+
+}
+
+/*THIS DEFINES THE BEHAVIOR OF ANY DIV ELEMENTS WITHIN THE FLEX-CONTAINER CLASS*/
+
+.flex-container-names > div {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  flex-basis: 250px;
+  justify-content: space-between;
+}
+
+
+.travel-photos {
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  flex-basis: 50px;
+  max-width: 250px;
+  justify-content: space-between;
+
+}
+
+
+/* ---------- PORTFOLIO --------------- */
+
+
+
+/* ----------- CONTACT ----------------- */
+
+
+/* THIS SECTION IS FOR BUTTONS AND LINKS */
+
+.button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: #7fe7cf;
+    color: white;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .button:hover, .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 5% */
+    opacity: 0.5;
+  }
+
+a {
+    color: seagreen;
+}
+
+a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    color: red; 
+    text-decoration: none;
+}
+
+a:visited {
+    /*visited link */
+    color: orange;
+}
+
+a:active {
+    /* selected link */
+    color: green;
+}
+
+input {
+    font-family: 'Lato', sans-serif;
+}
+
+.submit_button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    /*adds spacing to the button (this will be discussed more in-depth later) */
+    padding: 10px;
+    border-radius: 3px;
+    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  }
+
+  .submit_button:hover, .submit_button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /* reduces the opacity of the button to 5% */
+    opacity: 0.5;
+  }
+
+
+
+
+
+
+  /* THIS SECTION IS FOR THE BOTTOM SECTION OF WEBPAGE */
+
+
+  footer {
+    background-color: rgb(233, 186, 237);
+  }
+
+  .contact_image {
+    width: 25px;
+    height: 25px;
+  }

@@ -1,0 +1,325 @@
+/* EDITS ALL ELELEMENTS */
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+/*------------------------HEADER SECTION---------------------*/
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  height: auto;
+  background-color: rgb(243, 210, 246);
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-header .page-header_img {
+  width: 100px;
+  height: 100px;
+}
+.page-header .page-header_img .page-header__item {
+  flex: 0 1 200px;
+  width: 100px;
+}
+
+/*-----------NAV LIST -----*/
+.navigation-list li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.navigation-list_item {
+  height: 50px;
+  font-family: "Lato", sans-serif;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block; 
+  text-decoration: none;
+}
+
+.navigation-list_item:hover {
+  border: none;
+  color: white;
+  padding: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.navigation-list_item:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+
+/*------CHECK OUT MY CODE--------*/
+.portfolio-link {
+  color: white;
+  text-align: center;
+  background-color: rgb(235, 193, 235);
+  padding: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.portfolio-link:hover {
+  border: none;
+  color: white;
+  padding: 10px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+.portfolio-link:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/*------------------------MAIN ABOUT SECTION---------------------*/
+.profile {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  padding-top: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.profile .profile_portrait {
+  width: 50%;
+  float: left;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+/*------------------------FOOTER SECTION---------------------*/
+.page-footer {
+  clear: both;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+.page-footer .social-media {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+.page-footer .social-media .contact_image {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.return {
+  display: flex;
+  padding: 10px;
+  margin: 10px;
+}
+
+/*--------------------ABOUT ME PAGE-------------*/
+h1 {
+  color: purple;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  margin: 5px 5px;
+}
+
+.button, button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  font-family: inherit;
+  background-color: rgb(235, 193, 235);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s;
+}
+
+.svg-images {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Animate Image 1 on Hover */
+#image-1 {
+  transition: transform 0.5s;
+}
+
+#image-1:hover {
+  transform: scale(1.2);
+}
+
+#image-2 {
+  transition: transform 0.5s;
+}
+
+#image-2:hover {
+  transform: scale(1.2);
+}
+
+#image-3 {
+  transition: transform 0.5s;
+}
+
+#image-3:hover {
+  transform: scale(1.2);
+}
+
+.plane {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #F97744;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+.backpack {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #F97744;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+.tree {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change {
+  0% {
+    fill: #F97744;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+/*-----------------WORK-----------*/
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+#grid-container .grid_item {
+  border: 5px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+  min-height: 300px;
+  padding: 25px;
+  margin: 25px;
+  width: auto;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+#grid-container .grid_item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: rgb(235, 193, 235);
+}
+
+#grid-container .grid_item:focus {
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: rgb(235, 193, 235);
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  #grid-container {
+    grid-template-columns: 1fr; /* Switch to 1 column */
+  }
+}
+
+
+/*------------CONTACT PAGE ------*/
+
+.contact-form {
+  display: flex;
+  width: 225px;
+  align-items: center;
+  margin: 10px auto 10px;
+}
+.contact-form:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.contact-form:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/*--------------MEDIA EDITS--------------*/
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto/auto;
+    grid-row: auto/auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
