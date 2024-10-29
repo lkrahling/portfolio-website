@@ -10,6 +10,7 @@ p {
   text-align: center;
 }
 
+
 /*------------------------HEADER SECTION---------------------*/
 .page-header {
   display: flex;
@@ -98,7 +99,9 @@ p {
   float: left;
   margin-right: 40px;
   border-radius: 50%;
+  object-fit: cover;
 }
+
 
 /*------------------------FOOTER SECTION---------------------*/
 .page-footer {
@@ -142,7 +145,33 @@ h1 {
   margin: 5px 5px;
 }
 
-.button, button {
+/* Container to center the link */
+.resume-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button styling */
+.resume-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cb9ee1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.resume-link:hover {
+  background-color: #cb9ee1;;
+}
+
+
+
+/*.button, button {
   border: none;
   display: flex;
   justify-content: center;
@@ -153,7 +182,7 @@ h1 {
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: opacity 0.2s;
-}
+}*/
 
 .svg-images {
   display: flex;
